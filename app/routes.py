@@ -6,7 +6,15 @@ from flask import render_template
 def index():
     return render_template('index.html', title="Home Page")
 
-@app.route('/user/<name>')
-def getUser(name):
-    return render_template('user.html', name=name)
+@app.route('/galeria')
+def getGalery():
+    listaObrazkow = [
+        'https://bit.ly/2zuMWLJ',
+        'https://bit.ly/2zuMWLJ',
+        'https://bit.ly/2zuMWLJ',
+        'https://bit.ly/2zuMWLJ',
+        'https://bit.ly/2zuMWLJ'
+    ]
+    return render_template('galeria.html', listaObrazkow=listaObrazkow, title="Galeria")
+
 
