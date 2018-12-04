@@ -34,5 +34,3 @@
 #### [Dokumentacja Heroku](https://devcenter.heroku.com/categories/reference)
 #### [Heroku quick start dla Pythona](https://devcenter.heroku.com/articles/getting-started-with-python)
 #### [Wujek Google](www.google.pl) :sheep:
-
-
