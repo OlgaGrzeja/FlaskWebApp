@@ -7,7 +7,7 @@ def index():
     return render_template('index.html')
 
 @app.route('/galeria')
-def getGalary():
+def getGalery():
     # Ten kod bedzie pomocniczy tak sie nie robi
     obrazki = [
         'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiKSmuISvOrC3rELVcZxm2YSmb3sQ8gbfJQdDs72pyu4u3UJk0',
@@ -16,6 +16,6 @@ def getGalary():
     ]
     return render_template('galeria.html', obrazki=obrazki)
 
-@app.route('/memy')
-def memy():
-    return render_template('memy.html')
+@app.route('/alexa')
+def alexa():
+    return render_template('alexa.html')

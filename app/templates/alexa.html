@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% endblock %}
+
+{% block skrypty %}
+{# Tak dodajemy javascript do strony html('znacznikiem script')#}
+<script src="{{url_for('static', filename='./jsScripts/alexa.js')}}"></script>
+{% endblock %}
