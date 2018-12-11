@@ -1,11 +1,19 @@
+window.SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+let alexa = new SpeechRecognition()
+let przycisk = document.querySelector('input');
 
-let alexa = window.SpeechRecognition 
-
-function sluchaj(){
+function sluchaj(e){
     console.log("wiem co powiedziałeś")
-    alexa.start();
+    // zwraca to co powiedzielimsy do alexy
+    console.dir(e.results[0][0].transcript)
 }
 
 alexa.addEventListener('result', sluchaj);
-alexa.start()
+//alexa.addEventListener('end', alexa.start);
+
+przycisk.addEventListener('click', function(e){
+    e.preventDefault();
+    console.log('omg')
+    alexa.start()
+})
 
