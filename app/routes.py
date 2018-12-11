@@ -18,4 +18,8 @@ def galeria():
    
     return render_template('galeria.html', obrazki=obrazki)
 
+@app.route('/alexa')
+def alexa():
+    return render_template('alexa.html')
+
 
